@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Philosopher', sans-serif;
+}
+
+body {
+    background-color: rgb(238, 238, 238);
+}
+
+.container-header {
+    display: flex;
+    margin:30px;
+    justify-content:space-between;
+    align-items: center;
+}
+
+#iconMain {
+    font-size: 28px;
+    color: rgb(56, 55, 55);
+    text-shadow: 2px 2px 2px rgb(189, 189, 189);
+}
+
+.search-input{
+    width:50%;
+    font-size:22px;
+    margin-left:30%;
+    border: 2px transparent solid;
+}
+
+#searchicon{
+    color: rgb(28, 28, 28);
+    text-shadow: 2px 2px 2px rgb(156, 155, 155);
+}
+
+.container-productnew {
+    margin-top:50px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    margin-left:5px;
+    margin-right:5px;
+}
+
+.title-productnew {
+    font-size: 38px;
+    font-weight:600;
+    margin-bottom:50px;
+    color: rgb(28, 28, 28);
+    
+}
+
+.container-img {
+    position: relative;
+    display: flex;
+    justify-content:center;
+    margin-bottom:50px;
+}
+
+.img-productnew {
+    width:200px;
+    margin:0;
+}
+
+.title-img-productnew{
+    transform: rotate(-0.10turn);
+    right:0;
+    width:60px;
+    height:5px;
+    font-size:13px;
+    font-weight: bold;
+    margin-top:95px;
+    color: rgb(75, 74, 74);
+}
+
+.productnew-btn{
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+    margin-top:40px;
+    margin-left: auto;
+    margin-right: auto;
+    width:60%;
+    height:60px;
+    background-color: rgb(9, 9, 9);
+    border: 2px transparent solid;
+    border-radius:25px;
+    color: rgb(210, 210, 210);
+    box-shadow: 2px 2px 2px rgb(185, 185, 185);
+    margin-bottom:50px;
+}
+
+#comprar-new{
+    color: rgb(208, 122, 88);
+    margin-right:20px;
+    margin-left:45px;
+}
