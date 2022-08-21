@@ -29,7 +29,7 @@ body {
 }
 
 #iconMain:hover {
-    color: rgb(61, 107, 198);
+    color: rgb(227, 122, 70);
 }
 
 .search-input {
@@ -50,7 +50,8 @@ body {
 
 .title-ecommerce {
     font-size: 40px;
-    margin-top: 5px;
+    font-weight: bold;
+    margin-top:30px;
     margin-bottom: 0px;
     color: transparent;
     color: #353131;
@@ -63,26 +64,25 @@ body {
     align-items: center;
     width: 70%;
     margin: 50px auto 10px auto;
-    height: 36px;
+    height:60px;
     background: transparent;
-    border: 2px rgb(10, 10, 9) solid;
+    border: 3px rgb(227, 122, 70) solid;
     text-align: center;
-    border-radius: 5px;
-}
-
-#haisenber {
-    color: black;
+    border-radius:0px;
+    border-left:none;
+    box-shadow: 2px 2px 2px rgb(202, 199, 199);
 }
 
 .send-free {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top:30px;
+    margin-top:35px;
     background-color: rgb(227, 122, 70);
     color: rgb(216, 214, 214);
-    text-shadow: 3px 3px 3px black;
-    height: 30px;
+    text-shadow: 2px 1px 1px black;
+    box-shadow: 3px 3px 2px rgb(200, 200, 200);
+    height:50px;
 }
 
 .title-send-free {
@@ -90,38 +90,46 @@ body {
     font-size: 16px;
 }
 
-/*------------------------------------product new --------------------------------------*/
-
+/*------------------------------------main--------------------------------------*/
 
 .sample-productos {
     display: flex;
     width:100%;
     flex-direction: column;
-    margin: 10px;
     margin-top:45px;
 }
 
 .item-sample-product {
     display: flex;
     align-items: center;
-    margin-bottom: 40px;
-    box-shadow: 2px 3px 2px rgb(217, 216, 216);
+    margin-bottom:60px;
+    border-radius:30px;
+    border-bottom: 3px solid rgb(214, 213, 213);
 }
 
 .img-pre-product {
-    width: 25%;
+    width:30%;
     height: 25%;
     margin-right: 10px;
 }
 
+.img-pre-product:hover{
+    width:40%;
+}
+
 .title-pre-product {
     width: 60%;
-    font-size: 23px;
+    font-size:20px;
 }
 
 .fafa {
     color: rgb(227, 122, 70);
     text-shadow: 2px 2px 2px rgb(163, 163, 163);
+}
+
+.fafa2{
+    color: rgb(227, 122, 70);
+    text-shadow: 2px 2px 1px rgb(44, 44, 44);
 }
 
 .container-productnew {
@@ -130,13 +138,14 @@ body {
     flex-direction: column;
     text-align: center;
     justify-content: space-evenly;
-    margin: 10px 10px 10px 10px;
+    margin:5px;
+    bottom:15px;
 }
 
 .title-productnew {
-    font-size: 38px;
+    font-size:35px;
     font-weight: 600;
-    margin-bottom: 20px;
+    margin-bottom:20px;
     color: rgb(28, 28, 28);
 
 }
@@ -177,7 +186,7 @@ body {
     border-radius: 25px;
     color: rgb(210, 210, 210);
     box-shadow: 2px 2px 2px rgb(185, 185, 185);
-    margin-bottom:80px;
+    margin-bottom:15px;
 }
 
 #comprar-new {
@@ -187,6 +196,33 @@ body {
 }
 
 /*--------------------------------section abosoluta----------------------*/
+
+.container-wpp{
+    position: fixed;
+    bottom:90px;
+    display: flex;
+    margin-left:15px;
+}
+
+.fa-whatsapp{
+    font-size:50px;
+    color: rgb(55, 192, 55);
+}
+
+.commit{
+    margin-left:5px;
+    background-color: #ffff;
+    height:50px;
+    display: flex;
+    align-items: center;
+    padding:20px;
+    border-radius:40px;
+}
+
+.text-wpp{
+    margin:0px;
+    margin-right:10px;
+}
 
 .container-main-user {
     width: 100%;
@@ -218,9 +254,123 @@ body {
 #home {
     color: rgb(222, 98, 48);
     font-size: 28px;
-    text-shadow: 2px 3px 2px gray;
+    text-shadow: 2px 2px 2px gray;
 }
 
 #home:hover {
     color: rgb(61, 107, 198);
+}
+
+.cupon{
+    margin-top:0px;
+    margin-bottom:5px;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    background-color: black;
+    color: white;
+    height:100px;
+    padding:20px;
+    overflow:inherit;
+    box-shadow: 2px 2px 2px rgb(185, 185, 185);
+}
+
+.title-cupon{
+    width:50%;
+    font-size:90%;
+    margin:0;
+}
+
+
+.fa-user-astronaut{
+    font-size:26px;
+    text-shadow: 2px 2px 2px grey;
+}
+
+.fa-user-astronaut:hover{
+    color:rgb(222, 98, 48) ;
+    text-shadow: 2px 2px 2px rgb(71, 71, 71);
+    font-size:35px;
+}
+
+.registar{
+    margin:0px;
+}
+
+.registar:hover{
+    color:rgb(222, 98, 48) ;
+    font-size:18px;
+}
+
+/*---------------------scroll---------------------*/
+
+.main-scroll{
+    margin:20px;
+}
+
+.title-main-scroll{
+    display: flex;
+    justify-content: center;
+}
+
+.text-title-main-scroll{
+    font-size:22px;
+    font-weight:bold;
+    color: #575656;
+    margin-bottom:35px;
+}
+
+.arrow-movent{
+    position:relative;
+}
+
+.arrow-letf{
+    position:absolute;
+    top:0px;
+    width:37px;
+    height:37px;
+    border-radius:50%;
+    border:2px grey solid ;
+    text-shadow: 1px 1px 1px grey;
+    box-shadow: 1px 1px 2px grey;
+    color:rgb(222, 98, 48) ;
+}
+.arrow-letf:hover{
+    position:absolute;
+    top:0px;
+    width:37px;
+    height:37px;
+    border-radius:50%;
+    border:2px transparent solid ;
+    text-shadow: 1px 1px 1px grey;
+    box-shadow: 1px 1px 2px grey;
+    color: white;
+    background-color:rgb(222, 98, 48) ;
+}
+
+
+.arrow-right{
+    position:absolute;
+    top:0px;
+    width:37px;
+    height:37px;
+    border-radius:50%;
+    right:0px;
+    border:2px grey solid ;
+    text-shadow: 1px 1px 1px grey;
+    box-shadow: 1px 1px 2px grey;
+    color: rgb(222, 98, 48);
+}
+
+.arrow-right:hover{
+    position:absolute;
+    top:0px;
+    width:37px;
+    height:37px;
+    border-radius:50%;
+    border:2px transparent solid ;
+    text-shadow: 1px 1px 1px grey;
+    box-shadow: 1px 1px 2px grey;
+    color: white;
+    background-color:rgb(222, 98, 48) ;
 }
