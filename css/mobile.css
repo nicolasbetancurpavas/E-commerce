@@ -105,7 +105,7 @@ body {
     display: flex;
     align-items: center;
     margin-bottom: 40px;
-    box-shadow: 2px 2px 2px rgb(227, 226, 226);
+    box-shadow: 2px 3px 2px rgb(217, 216, 216);
 }
 
 .img-pre-product {
@@ -177,7 +177,7 @@ body {
     border-radius: 25px;
     color: rgb(210, 210, 210);
     box-shadow: 2px 2px 2px rgb(185, 185, 185);
-    margin-bottom: 60px;
+    margin-bottom:80px;
 }
 
 #comprar-new {
