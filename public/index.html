@@ -15,24 +15,22 @@
 </head>
 
 <body>
-    <header class="header">
-        <div class="container-header">
-            <nav class="main__nav">
-                <i class="fa-solid fa-bars-staggered" id="iconMain"></i>
-            </nav>
-            <input class="search-input" type="text" placeholder="Buscar">
 
-            <i id="searchicon" class="fa-solid fa-magnifying-glass"></i>
-        </div>
+    <header class="header">
         <div class="title-main-container">
             <h2 class="title-ecommerce">SLT</h2>
         </div>
     </header>
+
     <main>
 
         <div class="send-free">
             <i class="fa-solid fa-bars-staggered"></i><i class="fa-solid fa-truck"></i>
             <h3 class="title-send-free">Envio gratis</h3>
+        </div>
+        <div class="descuentos">
+            <h3 class="title-send-free">aprovecha los descuentos que tenemos para ti</h3>
+            <i class="DESCUENTO fa-solid fa-tags"></i>
         </div>
 
         <div class="sample-productos">
@@ -100,7 +98,32 @@
 
             <div class="container-main-scroll">
 
-                <div class="item'scoll">
+                <div class="item-scroll">
+                    <div class="scroll-img">
+                        <img class="img-product-scroll" src="../img/Example1.webp" alt="">
+                        <p class="tiket">20%</p>
+                    </div>
+                    <div class="scroll-information">
+                        <h2 class="text-information">Aspiradora Barredora I715 Irobot</h2>
+                        <div class="clasificacion">
+                            <i class="start fa-solid fa-star"></i>
+                            <i class="start fa-solid fa-star"></i>
+                            <i class="start fa-solid fa-star"></i>
+                            <i class="start fa-solid fa-star"></i>
+                            <i class="start fa-solid fa-star-half-stroke"></i>
+                        </div>
+                        
+                        <div class="envio-gratis">
+                            <i class="fa-solid fa-bars-staggered"></i><i class="fa-solid fa-truck"></i>
+                            <h3 class="title-send-free">Envio gratis</h3>
+                        </div>
+                        <p class="price-before">$3,899,950</p>
+                        
+                        <h3 class="price-new">$3,399,950</h3>
+                    </div>
+                </div>
+
+                <div class="item-scroll">
                     <div class="scroll-img">
                         <img src="" alt="">
                     </div>
@@ -111,7 +134,7 @@
                     </div>
                 </div>
 
-                <div class="item'scoll">
+                <div class="item-srcoll">
                     <div class="scroll-img">
                         <img src="" alt="">
                     </div>
@@ -122,18 +145,7 @@
                     </div>
                 </div>
 
-                <div class="item'scoll">
-                    <div class="scroll-img">
-                        <img src="" alt="">
-                    </div>
-                    <div class="scroll-information">
-                        <p class="text-information"></p>
-                        <p class="price-before"></p>
-                        <h3 class="price-new"></h3>
-                    </div>
-                </div>
-
-                <div class="item'scoll">
+                <div class="item-srcoll">
                     <div class="scroll-img">
                         <img src="" alt="">
                     </div>
@@ -156,30 +168,57 @@
             </div>
         </section>
 
-        <section class="main-user">
-            <ul class="container-main-user">
-                <li class="item">
-                    <i class="fa-solid fa-user"></i>
-                    <p class="user-init">iniciar seccion</p>
-                </li>
-                <li class="item">
-                    <i id="home" class="fa-solid fa-house"></i>
-                    <p class="user-init">Inicio</p>
-                </li>
-                <li class="item">
-                    <div class="cont-shop">
-                        <i class="fa-solid fa-cart-shopping"></i>
-                    </div>
-                    <p class="user-init">tus compras</p>
-                </li>
-            </ul>
-        </section>
     </main>
 
-    <footer>
+    <footer class="main-footer">
 
     </footer>
 
+    <section class="main-user">
+        <ul class="container-main-user">
+            <li class="item">
+                <i class="fa-solid fa-user"></i>
+                <p class="user-init">iniciar seccion</p>
+            </li>
+            <li class="item">
+                <i id="home" class="fa-solid fa-house"></i>
+                <p class="user-init">Inicio</p>
+            </li>
+            <li class="item">
+                <div class="cont-shop">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+                <p class="user-init">tus compras</p>
+            </li>
+        </ul>
+    </section>
+    <div class="container-header">
+        <nav class="main__nav">
+            <i class="fa-solid fa-bars-staggered" id="iconMain" data-bs-toggle="offcanvas" href="#offcanvasExample"></i>
+        </nav>
+        <input class="search-input" type="text" placeholder="Buscar">
+
+        <i id="searchicon" class="fa-solid fa-magnifying-glass"></i>
+    </div>
+
+    <section class="off-canvasMain">
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+            aria-labelledby="offcanvasExampleLabel">
+            <div class="header-canvas-menu">
+                <h2 class="title-ecommerce-main">SLT</h2>
+                <i id="btnclose" class="fa-solid fa-xmark" data-bs-dismiss="offcanvas" aria-label="Close"></i>
+            </div>
+            <div class="body-canvas-menu">
+
+            </div>
+            <div class="footer-canvas-menu">
+
+            </div>
+        </div>
+    </section>
+
+
+    <script src="../js/controller.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
         integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
         crossorigin="anonymous"></script>
