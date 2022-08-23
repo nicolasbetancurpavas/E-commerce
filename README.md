@@ -12,7 +12,7 @@ E-commerce basico
 - colores diseno responsive mobil-firts
 - menu lateral con boostrap offcanvas, buscador contenido index
 - aun no se agrega js
-- 
+
 
 
 

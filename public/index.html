@@ -17,9 +17,6 @@
 <body>
 
     <header class="header">
-        <div class="title-main-container">
-            <h2 class="title-ecommerce">SLT</h2>
-        </div>
     </header>
 
     <main>
@@ -167,39 +164,46 @@
                 <i class="fa-solid fa-xmark"></i>
             </div>
         </section>
-
     </main>
 
-    <footer class="main-footer">
 
+    <header>
+    <div class="container-header">
+        <div class="title-main-container">
+               <h2 class="title-ecommerce">SLT</h2>
+           </div>    
+           <nav class="main__nav">
+               <i class="fa-solid fa-bars-staggered" id="iconMain" data-bs-toggle="offcanvas" href="#offcanvasExample"></i>
+           </nav>
+           <input class="search-input" type="text" placeholder="Buscar">
+   
+           <i id="searchicon" class="fa-solid fa-magnifying-glass"></i>
+       </div>
+    </header>
+
+    <footer>
+        <section class="main-user">
+            <ul class="container-main-user">
+                <li class="item">
+                    <i class="fa-solid fa-user"></i>
+                    <p class="user-init">iniciar seccion</p>
+                </li>
+                <li class="item">
+                    <a href="index.html">
+                    <i id="home" class="fa-solid fa-house"></i>
+                    </a>
+                    <p class="user-init">Inicio</p>
+                </li>
+                <li class="item">
+                    <div class="cont-shop">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </div>
+                    <p class="user-init">tus compras</p>
+                </li>
+            </ul>
+        </section>
     </footer>
 
-    <section class="main-user">
-        <ul class="container-main-user">
-            <li class="item">
-                <i class="fa-solid fa-user"></i>
-                <p class="user-init">iniciar seccion</p>
-            </li>
-            <li class="item">
-                <i id="home" class="fa-solid fa-house"></i>
-                <p class="user-init">Inicio</p>
-            </li>
-            <li class="item">
-                <div class="cont-shop">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                </div>
-                <p class="user-init">tus compras</p>
-            </li>
-        </ul>
-    </section>
-    <div class="container-header">
-        <nav class="main__nav">
-            <i class="fa-solid fa-bars-staggered" id="iconMain" data-bs-toggle="offcanvas" href="#offcanvasExample"></i>
-        </nav>
-        <input class="search-input" type="text" placeholder="Buscar">
-
-        <i id="searchicon" class="fa-solid fa-magnifying-glass"></i>
-    </div>
 
     <section class="off-canvasMain">
         <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"

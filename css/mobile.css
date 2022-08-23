@@ -19,6 +19,7 @@ body {
 .container-header {
     width: 100%;
     position:fixed;
+    flex-wrap: wrap;
     background-color: rgb(255, 255, 255);
     display: flex;
     justify-content: space-evenly;
@@ -88,8 +89,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 70%;
-    margin: 50px auto 5px auto;
+    width: 100%;
+    margin:0px;
     height: 60px;
     background: transparent;
     text-align: center;
@@ -490,7 +491,8 @@ body {
 #offcanvasExample{
     width:70%;
     background-color: #ffffff;
-    box-shadow: 5px 5px 10px  rgb(16, 16, 16);
+    border-right:2px solid black;
+    font-weight: bold;
 }
 
 .header-canvas-menu{
