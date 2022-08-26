@@ -1,7 +1,7 @@
 // evento para ocultar wpp
-const icono = document.querySelector(".fa-xmark")
+const icono = document.querySelector(".wpp")
 const contenedorWpp = document.querySelector(".container-wpp")
-
+console.log(icono)
 icono.addEventListener("click",()=>{
     contenedorWpp.style.display= "none"
     setTimeout(()=>{
@@ -22,7 +22,25 @@ title.addEventListener("click",()=> {
 })
 
 
-//TRAVERSIN pintaremos la tienda
+//abrir soporte
+
+const cerrar = document.getElementById("btnclose")
+const boton = document.querySelector(".btn-send-form")
+const vistaSopport = document.querySelector(".support")
+const iconoSupport = document.querySelector("#support")
+
+//abrir vista
+iconoSupport.addEventListener("click",()=>{
+    vistaSopport.classList.toggle("activar")
+})
+// cerrar vista desde el icono cerrar
+cerrar.addEventListener("click",()=>{
+    vistaSopport.classList.toggle("activar")
+})
+
+
+
+
 
 
 
