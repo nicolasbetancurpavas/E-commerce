@@ -21,9 +21,7 @@ title.addEventListener("click",()=> {
     iconoflecha.classList.toggle("rotaremos")
 })
 
-
 //abrir soporte
-
 const cerrar = document.getElementById("btnclose")
 const boton = document.querySelector(".btn-send-form")
 const vistaSopport = document.querySelector(".support")
