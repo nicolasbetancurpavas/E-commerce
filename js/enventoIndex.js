@@ -10,18 +10,3 @@ console.log(contendorPE[0].children)
     }
 
 // scroll productos oferta
-
-let currentScrollPosition = 0
-let scrollAmount = 35;
-
-const sCont = document.querySelector(".main-scroll-h")
-const hScroll = document.querySelector(".container-main-scroll")
-
-let maxScroll = sCont.offsetwidth + hScroll.offsetwidth;
-
-function scrollHorizontally(val){
-    currentScrollPosition += (val * scrollAmount);
-
-    sCont.style.left = currentScrollPosition + "px";
-}
-
