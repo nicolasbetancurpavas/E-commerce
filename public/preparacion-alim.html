@@ -52,6 +52,51 @@
         </div>
     </main>
 
+    <div class="MODALINFORMACION">
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button id="atras" class="btn-atras" data-bs-dismiss="modal"><i class="fa-solid fa-angle-left"></i></button>
+                        <button class="btn-favorite"><i class="fa-regular fa-heart"></i></button>
+                    </div>
+                    <div class="modal-body">
+                            <figure class="contenedor-img-informacion-producto">
+                                <img class="img-informacion-producto" src="" alt="">
+                            </figure>
+                            <div class="container-informacion-producto-modal">
+                                <div class="extrellas-informacion">
+                                    <i class="start fa-solid fa-star"></i>
+                                    <i class="start fa-solid fa-star"></i>
+                                    <i class="start fa-solid fa-star"></i>
+                                    <i class="start fa-solid fa-star"></i>
+                                    <i class="start fa-solid fa-star-half-stroke"></i>
+                                </div>
+                                <h2 class="nombre-modal"></h2>
+                                <p class="precio-antes-modal"></p>
+                                <p class="precio-nuevo-modal"></p>
+                                <div class="envio-Gratis">
+                                    <h3 class="title-send-Free">Envio gratis</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <div class="item-modal-footeR">
+                                <label class="form-label">Cantidad</label>
+                            <input type="number" value="1" step="1" min="1" max="200" class="form-control" id="cantidadProducto">
+                            </div>
+                                        <p class="precio-producto-modal">0</p>
+                            <div id="add" class="item-modal-footer">
+                                    <p class="add">add</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <section class="container-wpp">
         <i class="fa-brands fa-whatsapp"></i>
         <div class="commit">
@@ -244,9 +289,10 @@
         </div>
     </section>
 
+
     <script src="../js/eventos.js"></script>
-    <script src="../js/traversing.js"></script>
-    <script src="../js/controller.js"></script>
+    <script src="../js/traversing.js" type="module"></script>
+    <script src="../js/controller.js" type="module"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
         integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"

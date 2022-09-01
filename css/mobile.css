@@ -116,6 +116,12 @@ body {
     font-size: 16px;
 }
 
+.title-send-Free{
+    margin:0px;
+    margin-right:10px;
+    font-size:18px;
+}
+
 .descuentos {
     display: flex;
     justify-content: space-evenly;
@@ -377,8 +383,8 @@ body {
 /*---------------------scroll---------------------*/
 
 .main-scroll {
-    margin-top: 40px;
-    margin-bottom: 0px;
+    margin-top:50px;
+    margin-bottom:40px;
     text-align: center;
 }
 
@@ -473,6 +479,12 @@ body {
     color: var(--principal);
 }
 
+.envio-Gratis{
+    margin:0px;
+    display: flex;
+    color: var(--principal);
+    align-items: center;
+}
 
 
 .price-before {
@@ -493,6 +505,8 @@ body {
 
 #offcanvasExample {
     width: 85%;
+    height:100%;
+    overflow: scroll;
     background-color: #ffffff;
     border-right: 2px solid transparent;
     font-weight: bold;
@@ -671,7 +685,7 @@ body {
 .text-information-f {
     display: flex;
     font-size: 16px;
-    width: 80%;
+    width:95%;
 }
 
 .information-item{
@@ -968,4 +982,160 @@ body {
     background-color: var(--principal);
     color: white;
     transition: background-color 1s ease;
+}
+
+/*---------modal informacion--------*/
+
+.modal-dialog{
+    height:100%;
+    margin-bottom:0px;
+}
+
+.btn-atras{
+    position: relative;
+    border: none;    
+    top:10px;
+    left:30px;
+    font-size:20px;
+    color: #3d3d3d;
+    text-shadow: 1px 2px 1px rgb(187, 187, 187);
+    color: #7a7a7a;
+}
+
+.btn-favorite{
+    position: relative;
+    border: none;    
+    top:10px;
+    right:30px;
+    font-size:20px;
+    text-shadow: 1px 1px 2px grey;
+    color: #7a7a7a;   
+}
+
+.btn-favorite:hover{
+    border-radius:50%;
+    padding:2px;
+    width:32px;
+    height:32px;
+    background-color: rgba(229, 22, 95, 0.266);
+    color: rgb(19, 19, 19);
+    transition: background-color 1.5s ease;
+    text-shadow: 2px 2px 2px rgb(216, 216, 216);
+}
+
+.modal-footer{
+    width:100%;
+    position: absolute;
+    display: flex;
+    bottom:20px;
+    justify-content: space-around;
+    background-color: white;
+}
+
+.item-modal-footer{
+    font-size:16px;
+    display: flex;
+    border: 2px solid transparent;
+    border-radius:10px;
+    width:85px;
+    height:40px;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    margin:0px 10px;
+}
+
+.item-modal-footeR{
+    font-size:16px;
+    border: 2px solid transparent;
+    width:85px;
+    height:40px;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    margin:0px 10px;
+    margin-bottom:40px;
+}
+
+
+#cantidadProducto{
+    margin-left:10px;
+    width:80px;
+    height:35px;
+    margin:0px;
+    border:2px solid var(--principal);
+    font-weight: bold;
+}
+
+.form-label{
+    color: #363535;
+    margin:0px;
+    background-color: white;
+}
+
+.btn-mas{
+    border: none;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px grey;
+    background-color: transparent;
+    color: white;
+}
+
+.btn-menos{
+    border: none;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px grey;
+    background-color: transparent;
+    color: white;
+}
+
+.precio-producto-modal{
+
+}
+
+.cantidad{
+    margin:0px;
+}
+
+.add{
+    margin: 0px;
+}
+
+#add{
+    background-color: rgb(101, 214, 112);
+}
+
+.img-informacion-producto{
+    width:300px;
+}
+
+.modal-body{
+    margin-top:20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom:80px;
+}
+
+.container-informacion-producto-modal{
+    padding:30px;
+}
+
+.nombre-modal{
+    color: #797878;
+    margin-top:15px;
+    margin-bottom:15px;
+}
+
+.precio-antes-modal{
+    margin: 0px;
+    color: rgb(209, 70, 54);
+    text-decoration:line-through;
+    font-size:18px;
+}
+
+.precio-nuevo-modal{
+    margin: 0px;
+    color:var(--principal);
+    font-size:25px;
 }
