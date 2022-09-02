@@ -24,7 +24,7 @@ export function ampliarInformacionProducto(e) {
     precioNuevo.textContent = `$ ${e.target.parentElement.querySelector(".precio-nuevo").textContent}`
 
     const mostrarprecio = document.querySelector(".precio-producto-modal")
-    mostrarprecio.textContent = e.target.parentElement.querySelector(".precio-nuevo").textContent
+    mostrarprecio.textContent = `$ ${e.target.parentElement.querySelector(".precio-nuevo").textContent}`
 
 
 
