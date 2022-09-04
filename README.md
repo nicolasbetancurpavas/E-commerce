@@ -13,7 +13,9 @@ E-commerce basico
 - menu lateral con boostrap offcanvas, buscador contenido index
 - aun no se agrega js
 
-
-
-
+-resumen hasta la version 17
+-agregasmos traversing para pintar nuestros productos 
+-agregamos para ampliar la informacion del producto
+-dectetamos eventos y accedemos a informacion del producto para llevarla al modal (ParentElement)
+-mejoras de diseno 
 

@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="../css/mobile.css">
 </head>
 
-<body>
+<body id="body">
 
     
     <main>
@@ -198,32 +198,6 @@
             </div>
         </section>
 
-        <div class="soporte">
-            <i id="support" class="fa-solid fa-headset"></i>
-            <section class="support desactivar">
-                <div class="main-support">
-                    <i id="btnclose" class="fa-solid fa-xmark"></i>
-                    <h2 class="title-support">Queja? reclamo?, informacion personalizada?</h2>
-                    <p class="text-support">Dejanos tus datos</p>
-                    <form action="">
-                        <label for="tel" class="item-form">
-                            Telefono: <input type="text" id="tel" class="input-form">
-                        </label>
-                        <label for="correo" class="item-form">
-                            Correo : <input type="email" placeholder="example@gmail.com" id="correo" class="input-form">
-                        </label>
-
-                        <label for="queja" class="item-form">
-                            Queja: <input type="email" placehold" id="queja" class="input-form">
-                        </label>
-
-                        <button type="button" class="btn-send-form">Enviar</button>
-                    </form>
-                </div>
-            </section>
-
-        </div>
-
         <div class="information-container">
             <div class="information-item">
                 <h2 class="title-information">Llena tu hogar de los mejores electrodomésticos con STL Colombia</h2>
@@ -338,6 +312,32 @@
 
     </footer>
 
+    <div class="soporte">
+        <i id="support" class="fa-solid fa-headset"></i>
+        <section class="support desactivar">
+            <div class="main-support">
+                <i id="btnclose" class="fa-solid fa-xmark"></i>
+                <h2 class="title-support">Queja? reclamo?, informacion personalizada?</h2>
+                <p class="text-support">Dejanos tus datos</p>
+                <form action="">
+                    <label for="tel" class="item-form">
+                        Telefono: <input type="text" id="tel" class="input-form">
+                    </label>
+                    <label for="correo" class="item-form">
+                        Correo : <input type="email" placeholder="example@gmail.com" id="correo" class="input-form">
+                    </label>
+
+                    <label for="queja" class="item-form">
+                        Queja: <input type="email" placehold" id="queja" class="input-form">
+                    </label>
+
+                    <button type="button" class="btn-send-form">Enviar</button>
+                </form>
+            </div>
+        </section>
+
+    </div>
+
     <section class="main-user">
 
         <div class="container-header">
@@ -366,14 +366,60 @@
                 </a>
                 <p class="user-init">Inicio</p>
             </li>
-            <li class="item">
+            <li class="item shop">
                 <div class="cont-shop">
+                        <p class="contador">1</p>
                     <i class="fa-solid fa-cart-shopping"></i>
                 </div>
                 <p class="user-init">tus compras</p>
             </li>
         </ul>
     </section>
+
+    <div class="MODALINFORMACION">
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button id="atras" class="btn-atras" data-bs-dismiss="modal"><i class="fa-solid fa-angle-left"></i></button>
+                        <button class="btn-favorite"><i class="fa-regular fa-heart"></i></button>
+                    </div>
+                    <div class="modal-body">
+                            <figure class="contenedor-img-informacion-producto">
+                                <img class="img-informacion-producto" src="" alt="">
+                            </figure>
+                            <div class="container-informacion-producto-modal">
+                                <div class="extrellas-informacion">
+                                    <i class="start fa-solid fa-star"></i>
+                                    <i class="start fa-solid fa-star"></i>
+                                    <i class="start fa-solid fa-star"></i>
+                                    <i class="start fa-solid fa-star"></i>
+                                    <i class="start fa-solid fa-star-half-stroke"></i>
+                                </div>
+                                <h2 class="nombre-modal"></h2>
+                                <p class="precio-antes-modal"></p>
+                                <p class="precio-nuevo-modal"></p>
+                                <div class="envio-Gratis">
+                                    <h3 class="title-send-Free">Envio gratis</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <div class="item-modal-footeR">
+                                <label class="form-label">Cantidad</label>
+                            <input type="number" value="1" step="1" min="1" max="200" class="form-control" id="cantidadProducto">
+                            </div>
+                                        <p class="precio-producto-modal">0</p>
+                            <div id="add" class="item-modal-footer">
+                                    <p class="add">add</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
     <section class="off-canvasMain">
@@ -383,11 +429,11 @@
                 <h2 class="title-ecommerce-main">SLT</h2>
                 <i id="btnclose" class="fa-solid fa-xmark" data-bs-dismiss="offcanvas" aria-label="Close"></i>
             </div>
-            <div class="container-location">
-                <i class="LOCATION fa-solid fa-location-dot"></i>
-                <p class="text-location">¿como quieres recibir tu pedido?</p>
-            </div>
             <a class="lateral-house" href="index.html">
+                <div class="container-location">
+                    <i class="LOCATION fa-solid fa-location-dot"></i>
+                    <p class="text-location">¿como quieres recibir tu pedido?</p>
+                </div>
                 <h2 class="text-categorias-f">
                     <i class="fa-solid fa-house"></i> Inicio
                 </h2>
@@ -454,6 +500,13 @@
         </div>
     </section>
 
+    <div class="main-productos">
+
+    </div>
+
+    
+
+    <script src="../js/controller.js" type="module"></script>
     <script src="../js/eventos.js"></script>
     <script src="../js/enventoIndex.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"

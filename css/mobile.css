@@ -314,6 +314,34 @@ body {
     margin: 0px;
 }
 
+.cont-shop{
+    display: flex;
+    flex-direction: column;
+}
+
+.shop{
+    margin-top:10px;
+}
+
+.contador{
+    background-color: rgb(232, 78, 78);
+    color: white;
+    width:20px;
+    height:20px;
+    margin:0px;
+    position:absolute;
+    right:12%;
+    bottom:47px;
+    border-radius: 50%;
+    text-shadow: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 2s ease;
+    font-size:16px;
+}
+
+
 .item {
     width: 33.33%;
     font-size: 20px;
@@ -695,7 +723,7 @@ body {
 /*footer*/
 
 .container-footer {
-    margin-bottom: 70px;
+    margin-bottom:40px;
     display: flex;
     flex-direction: column;
     background-color: rgb(20, 20, 20);
@@ -796,7 +824,7 @@ body {
 .container-headerdos {
     display: flex;
     justify-content: space-between;
-    margin: 20px;
+    margin:30px;
     align-items: center;
 
 }
@@ -1032,7 +1060,7 @@ body {
     width:100%;
     position: absolute;
     display: flex;
-    bottom:20px;
+    bottom:0px;
     justify-content: space-around;
     background-color: white;
     border: none;
@@ -1066,6 +1094,7 @@ body {
     color: #363535;
     margin:0px;
     background-color: white;
+    margin-left:10px;
 }
 
 .precio-producto-modal{

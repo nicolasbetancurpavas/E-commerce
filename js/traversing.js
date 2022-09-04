@@ -1,5 +1,5 @@
 // BD
-function llenarTienda() {
+export function llenarTienda() {
 
     const BD = [
         { nombre: "Freidora De Aire Caliente Nuo Home 2 Litro", priceBefore: 219950, newprice: 159950, color: "negro", estado: "disponible", descuento: 20, img: "../img/Freidora-sku.webp" },
@@ -22,6 +22,9 @@ function llenarTienda() {
         { nombre: "Freidora aire ultra digital imusa 4.2 lt 7211004637", priceBefore: 0, newprice: 349950, color: "gris", estado: "disponible", descuento: 0, img: "../img/freidora-aire-ultra-digital-imusa-4.2-lt-7211004637-1.webp" },
     ]
 
+    let URLactual = window.location
+
+    if(URLactual == "http://127.0.0.1:5500/public/preparacion-alim.html" ){
 
     //traversing
 
@@ -83,4 +86,6 @@ function llenarTienda() {
 
 }
 
-export default llenarTienda
+else console.log("estas en home")
+
+}
