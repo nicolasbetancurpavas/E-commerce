@@ -907,7 +907,7 @@ body {
 
 .estado {
     font-size: 14px;
-    color: rgb(219, 109, 102);
+    color: rgb(58, 154, 17);
 }
 
 .card-btn {
@@ -958,12 +958,12 @@ body {
     position: fixed;
     right: 35px;
     bottom: 150px;
-    background-color: rgb(248, 244, 244);
+    background-color: rgb(255, 255, 255);
     width: 255px;
     padding: 20px;
     transition: background-color 1s ease;
     border-radius: 10px;
-    box-shadow: 2px 2px 2px rgb(189, 187, 187);
+    box-shadow: 2px 2px 2px rgb(238, 238, 238);
 }
 
 .support:hover {
@@ -1023,7 +1023,7 @@ body {
     position: relative;
     border: none;    
     top:10px;
-    left:30px;
+    left:20px;
     font-size:20px;
     text-shadow: 1px 2px 1px rgb(187, 187, 187);
     color: #7a7a7a;
@@ -1038,7 +1038,7 @@ body {
     position: relative;
     border: none;    
     top:10px;
-    right:30px;
+    right:20px;
     font-size:20px;
     text-shadow: 1px 1px 2px grey;
     color: #7a7a7a;   
@@ -1077,6 +1077,14 @@ body {
     justify-content: space-around;
     color: white;
     margin:0px 10px;
+}
+
+.modal-body-informacion{
+    display: flex;
+    flex-direction: column;
+    margin-top:50px;
+    justify-content: center;
+    align-items: center;
 }
 
 #cantidadProducto{

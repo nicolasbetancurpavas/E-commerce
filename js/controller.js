@@ -8,6 +8,7 @@ let productos = {}
 // llamo modal
 
 const modalInformacion = new bootstrap.Modal(document.getElementById("exampleModal"))
+const modalResumen = new bootstrap.Modal(document.getElementById("staticBackdrop"))
 
 const contenedorProductos = document.querySelector(".main-productos")
 
@@ -36,17 +37,24 @@ let carrito = []
 
 btnAdd.addEventListener("click", () => {
     let cantidadProduct = document.getElementById("cantidadProducto").value
-
     productos.cantidad = Number(cantidadProduct)
     carrito.push(productos)
 
+    // saco cantidades de cada producto y las sumo 
     let cantidades = carrito.map((e)=>e.cantidad)
     let suma = cantidades.reduce((indiceActual,indiceSiguiente)=>indiceActual + indiceSiguiente)
     
     capsula.textContent = suma
     capsula.classList.remove("invisible") 
-
+    
     modalInformacion.hide() 
+})
+
+// modal compras agregadas 
+let iconShop  = document.querySelector(".shop")
+
+iconShop.addEventListener("click",()=>{
+    modalResumen.show()
 })
 
 
