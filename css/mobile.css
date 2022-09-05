@@ -573,9 +573,11 @@ body {
     margin-left: 40px;
 }
 
-.desactivar {
+.desactivar{
     display: none;
 }
+
+
 
 .activar {
     display: block;

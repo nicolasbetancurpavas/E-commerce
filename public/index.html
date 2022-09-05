@@ -16,7 +16,7 @@
 
 <body id="body">
 
-    
+
     <main>
         <div class="send-free">
             <i class="fa-solid fa-bars-staggered"></i><i class="fa-solid fa-truck"></i>
@@ -374,9 +374,9 @@
                 <i class="fa-solid fa-bars-staggered" id="iconMain" data-bs-toggle="offcanvas"
                     href="#offcanvasExample"></i>
             </nav>
-    
-                <input class="search-input" type="text" placeholder="Buscar">
- 
+
+            <input class="search-input" type="text" placeholder="Buscar">
+
             <i id="searchicon" class="fa-solid fa-magnifying-glass"></i>
         </div>
 
@@ -406,65 +406,68 @@
             <div class="modal-dialog modal-fullscreen">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <button id="atras" class="btn-atras" data-bs-dismiss="modal"><i class="fa-solid fa-angle-left"></i></button>
+                        <button id="atras" class="btn-atras" data-bs-dismiss="modal"><i
+                                class="fa-solid fa-angle-left"></i></button>
                         <button class="btn-favorite"><i class="fa-regular fa-heart"></i></button>
                     </div>
                     <div class="modal-body">
-                            <figure class="contenedor-img-informacion-producto">
-                                <img class="img-informacion-producto" src="" alt="">
-                            </figure>
-                            <div class="container-informacion-producto-modal">
-                                <div class="extrellas-informacion">
-                                    <i class="start fa-solid fa-star"></i>
-                                    <i class="start fa-solid fa-star"></i>
-                                    <i class="start fa-solid fa-star"></i>
-                                    <i class="start fa-solid fa-star"></i>
-                                    <i class="start fa-solid fa-star-half-stroke"></i>
-                                </div>
-                                <h2 class="nombre-modal"></h2>
-                                <p class="precio-antes-modal"></p>
-                                <p class="precio-nuevo-modal"></p>
-                                <div class="envio-Gratis">
-                                    <h3 class="title-send-Free">Envio gratis</h3>
-                                </div>
+                        <figure class="contenedor-img-informacion-producto">
+                            <img class="img-informacion-producto" src="" alt="">
+                        </figure>
+                        <div class="container-informacion-producto-modal">
+                            <div class="extrellas-informacion">
+                                <i class="start fa-solid fa-star"></i>
+                                <i class="start fa-solid fa-star"></i>
+                                <i class="start fa-solid fa-star"></i>
+                                <i class="start fa-solid fa-star"></i>
+                                <i class="start fa-solid fa-star-half-stroke"></i>
+                            </div>
+                            <h2 class="nombre-modal"></h2>
+                            <p class="precio-antes-modal"></p>
+                            <p class="precio-nuevo-modal"></p>
+                            <div class="envio-Gratis">
+                                <h3 class="title-send-Free">Envio gratis</h3>
                             </div>
                         </div>
-                        <div class="modal-footer">
-                            <div class="item-modal-footeR">
-                                <label class="form-label">Cantidad</label>
-                            <input type="number" value="1" step="1" min="1" max="200" class="form-control" id="cantidadProducto">
-                            </div>
-                                        <p class="precio-producto-modal">0</p>
-                            <div id="add" class="item-modal-footer">
-                                    <p class="add">add</p>
-                            </div>
+                    </div>
+                    <div class="modal-footer">
+                        <div class="item-modal-footeR">
+                            <label class="form-label">Cantidad</label>
+                            <input type="number" value="1" step="1" min="1" max="200" class="form-control"
+                                id="cantidadProducto">
+                        </div>
+                        <p class="precio-producto-modal">0</p>
+                        <div id="add" class="item-modal-footer">
+                            <p class="add">add</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    </div>
 
     <div class="MODALRESUMEN">
         <!-- Modal -->
-        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-           <div class="modal-dialog">
-             <div class="modal-content">
-               <div class="modal-header">
-                 <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
-                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-               </div>
-               <div class="modal-body">
-                 ...
-               </div>
-               <div class="modal-footer">
-                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                 <button type="button" class="btn btn-primary">Understood</button>
-               </div>
-             </div>
-           </div>
-         </div>
-         </div>
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        ...
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Understood</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <section class="off-canvasMain">
         <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" data-bs-scroll="true"
@@ -544,11 +547,13 @@
         </div>
     </section>
 
-    <div class="main-productos">
+    <div class="desactivar">
+        <div class="main-productos">
 
+        </div>
     </div>
 
-    
+
 
     <script src="../js/controller.js" type="module"></script>
     <script src="../js/eventos.js"></script>
