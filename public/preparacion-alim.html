@@ -61,7 +61,7 @@
                                 class="fa-solid fa-angle-left"></i></button>
                         <button class="btn-favorite"><i class="fa-regular fa-heart"></i></button>
                     </div>
-                    <div class="modal-body">
+                    <div class="modal-body-informacion">
                         <figure class="contenedor-img-informacion-producto">
                             <img class="img-informacion-producto" src="" alt="">
                         </figure>
@@ -98,26 +98,34 @@
     </div>
     </div>
 
-  <div class="MODALRESUMEN">
- <!-- Modal -->
- <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="staticBackdropLabel">Tus compras</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    <div class="MODALRESUMEN">
+        <!-- Modal -->
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">Carrito de Compras</h5>
+                        <button type="button" class="btn-close" id="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body-resumen">
+                        <h5 class="NA desactivar">No hay productos</h5>
+                        <div class="container-resumen-compra">
+                            
+                        </div>
+                    </div>
+                    <div class="modal-footer-resumen">
+                        <button type="button" class="btn btn-secondary cerrarmodal" data-bs-dismiss="modal">Cerrar</button>
+                        <div class="botones-rigth"> 
+                            <h2 class="productnull">0</h2>
+                            <button type="button" class="limpiar-modal">Limpiar</button>                
+                            <button type="button" class="buy">Calcular Compra</button>                
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="modal-body">
-          <h5 class="">No hay productos agregados</h5>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Understood</button>
-        </div>
-      </div>
     </div>
-  </div>
-  </div>
 
 
     <section class="container-wpp">
@@ -166,9 +174,8 @@
         </ul>
     </section>
 
-
-
     <footer class="footer">
+
         <div class="container-footer">
             <div class="container-pago">
                 <h2 class="title-pago">Metodos de pago</h2>
