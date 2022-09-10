@@ -66,7 +66,6 @@ iconShop.addEventListener("click", () => {
 
     // contenedor base para pintar resumen compra
     let baseResumenCompra = document.querySelector(".container-resumen-compra")
-    console.log(carrito)
 
     baseResumenCompra.innerHTML = ""
 
@@ -146,12 +145,35 @@ iconShop.addEventListener("click", () => {
         let calcular = document.querySelector(".buy")
         let totalneto = document.querySelector(".productnull")
 
+        //subtotal
+        let sub = carrito.map((elemeto) => elemeto.subtotal)
+        let TOTAL = sub.reduce((actual, siguiente) => actual + siguiente)
+        console.log(carrito)
+
+        // sumar catidades para validar si entra en los descuentos 
+        let cantidades = carrito.map((e) => e.cantidad)
+        let suma = cantidades.reduce((indiceActual, indiceSiguiente) => indiceActual + indiceSiguiente)
+
+        //mostra cantidad de productos 
+        let resultSubtotal = document.querySelector(".result-subtotal")
+        let cantidadProducto = document.querySelector(".productos-res")
+        let Descuento = document.querySelector(".result-descuento")
+
+        if(suma > 0){
+            cantidadProducto.classList.remove("desactivar")
+            cantidadProducto.textContent = `(${suma} productos)`
+        }
+        
+
         calcular.addEventListener("click", () => {
-            let sub = carrito.map((elemeto) => elemeto.subtotal)
-            let TOTAL = sub.reduce((actual, siguiente) => actual + siguiente)
-            console.log(sub)
-            console.log(TOTAL)
-            totalneto.textContent = `Total compra: ${TOTAL}`
+            resultSubtotal.textContent = TOTAL
+            if (suma > 2) {
+                let descuentoD = parseInt(TOTAL * 85 / 100)
+                let descuento = parseInt(TOTAL * 15 / 100)
+                totalneto.textContent = `Total compra: ${descuentoD}`
+                Descuento.textContent = `$ ${descuento}`
+            }
+            else totalneto.textContent = `Total compra: ${TOTAL}`
         })
 
     })

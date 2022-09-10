@@ -898,6 +898,10 @@ body {
     color: var(--principal);
 }
 
+.precio-nuevo::before{
+    content: "$";
+}
+
 .etiqueta-descuento {
     display: flex;
     justify-content: center;
@@ -1182,21 +1186,20 @@ body {
     font-size: 18px;
     color: var(--principal);
     position: absolute;
-    right:2px;
-    bottom:40px;
+    right:10px;
+    bottom:22px;
 }
 
 .modal-title{
     font-size:25px;
-    color: rgb(235, 235, 235);
+    color: rgb(141, 141, 141);
     font-weight: bold;
-    text-shadow: 2px 1px 2px var(--principal);
 }
-
 
 .img-resumen-modal{
     width:110px;
     height:100px;
+    border-radius:5px;
 }
 
 .modal-body-resumen{
@@ -1209,7 +1212,9 @@ body {
     align-items: center;
     padding:10px;
     margin-bottom:20px;
-    border-radius: 10px;
+    border-radius: 5px;
+    border: 0.5px solid rgb(211, 211, 211);
+    box-shadow: 1px 1px 2px rgb(207, 206, 206);
 }
 
 .NA {
@@ -1243,6 +1248,11 @@ body {
 
 .precio-actual-resumen-modal{
     color: var(--principal);
+
+}
+
+.precio-actual-resumen-modal::before{
+    content: "$";
 }
 
 .cantidad-resumen-modal{
@@ -1260,11 +1270,10 @@ body {
 
 .modal-footer-resumen {
     display: flex;
-    padding:20px;
+    padding:0px;
     align-items: center;
     height:100px;
     background-color:white;
-    border-top: 1px solid rgb(190, 190, 190);
 }
 
 .btn {
@@ -1280,14 +1289,19 @@ body {
     margin-right:10px;
     bottom:20px;
     left:10px;
-    padding:8px;
-    width:17%;
+    padding:10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:20%;
+    height:38px;
+    bottom:25px;
 }
 
 .botones-rigth {
     position: absolute;
     right:10px;
-    width:73%;
+    width:65%;
     margin-top:20px;
     display: flex;
     flex-wrap: wrap;
@@ -1296,6 +1310,7 @@ body {
 .buy {
     position: absolute;
     right:0px;
+    bottom:-25px;
     background-color: var(--principal);
     color:white;
     border: 2px solid var(--principal);
@@ -1303,7 +1318,7 @@ body {
     font-size: 14px;
     padding: 8px;
     border-radius: 6px;
-    width:65%;
+    width:75%;
     margin-top:15px;
 }
 
@@ -1313,10 +1328,17 @@ body {
     border: 2px solid transparent;
     font-weight: bold;
     font-size: 14px;
-    padding: 8px;
+    padding:8px;
     border-radius: 6px;
-    width:30%;
+    width:20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-top:15px;
+    position:absolute;
+    left:25%;
+    bottom:24px;
+    height:38px;
 }
 
 .buy:hover {
@@ -1334,4 +1356,42 @@ body {
 
 .modal-content{
     padding:10px;
+}
+
+.figure{
+    margin:0px;
+    margin-right:7px;
+}
+
+.item-f{
+    color: #848383;
+    padding-top:20px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 0.5px rgb(205, 205, 205) solid;
+    flex-wrap: wrap;
+}
+
+.tin{
+    width:75%;
+    display: flex;
+}
+
+.finalizacion-compra{
+    margin:10px;
+}
+
+.text-f{
+    font-weight: bold;
+    color: #514f4f;
+    
+}
+
+.item-f p {
+    margin:0px;
+    margin-bottom:5px;
+}
+
+.productos-res{
+    margin-left:10px;
 }
