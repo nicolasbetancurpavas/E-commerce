@@ -17,7 +17,7 @@ const contenedorProductos = document.querySelector(".main-productos")
 
 contenedorProductos.addEventListener("click", (e) => {
     if (e.target.classList.contains("card-btn") || e.target.classList.contains("card-img")) {
-        // valor cantidad vuelve a 1 
+        //(al escojer un producto  la (cantidad) se empieza en 0 de nuevo)
         let cantidadProduct = document.getElementById("cantidadProducto")
         cantidadProduct.value = 1
         // traemos informacion del evento para formar el objecto
@@ -31,6 +31,7 @@ contenedorProductos.addEventListener("click", (e) => {
 const btnAdd = document.getElementById("add")
 const capsula = document.querySelector(".contador")
 let carrito = []
+
 
 btnAdd.addEventListener("click", () => {
     let cantidadProduct = document.getElementById("cantidadProducto").value
@@ -48,26 +49,13 @@ btnAdd.addEventListener("click", () => {
 })
 
 
-
-// limpiar carrito 
-
-let limpiar = document.querySelector(".limpiar-modal")
-console.log(limpiar)
-limpiar.addEventListener("click", () => {
-    carrito = []
-    capsula.classList.add("invisible")
-    modalResumen.hide()
-})
-
 // modal compras agregadas 
 let iconShop = document.querySelector(".shop")
-
 iconShop.addEventListener("click", () => {
-
     // contenedor base para pintar resumen compra
     let baseResumenCompra = document.querySelector(".container-resumen-compra")
-
     baseResumenCompra.innerHTML = ""
+
 
     // verificamos que haya productos agregados
     let nullProductos = document.querySelector(".NA")
@@ -75,13 +63,11 @@ iconShop.addEventListener("click", () => {
         let totalneto = document.querySelector(".productnull")
         nullProductos.classList.remove("desactivar")
         totalneto.textContent = 0
-
     }
+
     if (carrito.length > 0) {
         nullProductos.classList.add("desactivar")
     }
-
-
 
     // pintamos los productos 
     carrito.forEach((producto) => {
@@ -141,42 +127,72 @@ iconShop.addEventListener("click", () => {
         // agrego atributo el subtotal
         producto.subtotal = Number(producto.precioAhora) * Number(producto.cantidad)
 
-        // btn calcular compra 
-        let calcular = document.querySelector(".buy")
-        let totalneto = document.querySelector(".productnull")
+        // limpiar carrito
+        let limpiar = document.querySelector(".limpiar-modal")
 
-        //subtotal
+        //subtotal para saber total de los productos
         let sub = carrito.map((elemeto) => elemeto.subtotal)
         let TOTAL = sub.reduce((actual, siguiente) => actual + siguiente)
-        console.log(carrito)
 
         // sumar catidades para validar si entra en los descuentos 
         let cantidades = carrito.map((e) => e.cantidad)
         let suma = cantidades.reduce((indiceActual, indiceSiguiente) => indiceActual + indiceSiguiente)
 
+        limpiar.addEventListener("click", () => {
+
+            // borrar informacion carrito y reiniciando valores a 0
+            let cantidadProducto = document.querySelector(".productos-res")
+            let resultSubtotal = document.querySelector(".result-subtotal")
+            let Descuento = document.querySelector(".result-descuento")
+            cantidadProducto.classList.add("desactivar")
+            resultSubtotal.textContent = 0
+            Descuento.textContent = 0
+
+            suma = 0
+
+            //limpiar carrito 
+            carrito = []
+            capsula.classList.add("invisible")
+            modalResumen.hide()
+        })
+
+        // btn calcular compra 
+        let calcular = document.querySelector(".buy")
+        let totalneto = document.querySelector(".productnull")
+
         //mostra cantidad de productos 
-        let resultSubtotal = document.querySelector(".result-subtotal")
         let cantidadProducto = document.querySelector(".productos-res")
+        let resultSubtotal = document.querySelector(".result-subtotal")
         let Descuento = document.querySelector(".result-descuento")
 
-        if(suma > 0){
-            cantidadProducto.classList.remove("desactivar")
-            cantidadProducto.textContent = `(${suma} productos)`
-        }
-        
-
         calcular.addEventListener("click", () => {
-            resultSubtotal.textContent = TOTAL
+
+            if (suma > 0) {
+                cantidadProducto.classList.remove("desactivar")
+                cantidadProducto.textContent = `(${suma} productos)`
+            }
+            // si el carrito se limpio que borre resultados todos se inicia en 0
+            if (carrito.length == 0) {
+                TOTAL = 0
+            }
+
             if (suma > 2) {
                 let descuentoD = parseInt(TOTAL * 85 / 100)
                 let descuento = parseInt(TOTAL * 15 / 100)
+                resultSubtotal.textContent = TOTAL
                 totalneto.textContent = `Total compra: ${descuentoD}`
                 Descuento.textContent = `$ ${descuento}`
             }
-            else totalneto.textContent = `Total compra: ${TOTAL}`
+            else {
+                resultSubtotal.textContent = `${TOTAL}`
+                totalneto.textContent = `Total compra: ${TOTAL}`
+            }
+
         })
 
     })
 
     modalResumen.show()
 })
+
+
