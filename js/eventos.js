@@ -21,6 +21,12 @@ title.addEventListener("click",()=> {
     iconoflecha.classList.toggle("rotaremos")
 })
 
+let arrowGet = document.getElementById("noview")
+arrowGet.addEventListener("click",()=>{
+    texto.classList.toggle("activar")
+    iconoflecha.classList.toggle("rotaremos")
+})
+
 //abrir soporte
 const cerrar = document.getElementById("btnclose")
 const boton = document.querySelector(".btn-send-form")
