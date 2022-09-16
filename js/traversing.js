@@ -29,7 +29,7 @@ export function llenarTienda() {
     console.log(mainProduct)
 
     //pintamos la bd
-     BD.forEach((producto) => {
+    BD.forEach((producto) => {
 
         const contenedorCard = document.createElement("div")
         contenedorCard.classList.add("container-card")
