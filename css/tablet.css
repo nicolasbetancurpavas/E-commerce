@@ -1,0 +1,26 @@
+:root {
+    --principal: rgb(35, 38, 129);
+}
+
+.fa-magnifying-glass {
+    display: none;
+}
+
+.container-header {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+}
+
+#iconMain {
+    position: absolute;
+    left: 15px;
+    font-size: 30px;
+    color: var(--principal);
+}
+
+.search-input {
+    border: 2px solid var(--principal);
+    width: 70%;
+    border-radius: 6px;
+}

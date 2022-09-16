@@ -12,27 +12,24 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
     <script src="https://kit.fontawesome.com/cd03ee7cfb.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../css/mobile.css">
+    <link rel="stylesheet" href="../css/tablet.css" media="screen and (min-width:520px)">
 </head>
 
 <body>
-
     <main>
-
         <div>
-
             <form action="#" class="formulario-registro">
                 <h5 id="offcanvasRightLabel">Registrar</h5>
 
                 <label for="username" class="item-label">
-                    <p class="text-is">Correo eletronico: </p> <input type="email" placeholder="Nicolas99@gmail.com"
-                        id="correo" required class="item-input">
+                    <p class="text-is">Correo eletronico: </p>
+                    <input type="email" placeholder="Nicolas99@gmail.com" id="correo" required class="item-input">
                 </label>
                 <label for="contra" class="item-label">
                     <p class="text-is">Contraseña:</p> <input type="password" id="contrase" required class="item-input">
                 </label>
                 <input type="submit" value="Registrar" class="btn-register" id="register">
             </form>
-
         </div>
 
         <section class="container-wpp">
@@ -42,6 +39,7 @@
                 <i class="fa-solid fa-xmark wpp"></i>
             </div>
         </section>
+
         <div class="soporte">
             <i id="support" class="fa-solid fa-headset"></i>
             <section class="support desactivar">
@@ -68,7 +66,6 @@
 
         </div>
     </main>
-
 
     <footer class="footer">
 
@@ -296,6 +293,20 @@
         </div>
         </div>
     </section>
+
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="div-aut">
+                        <i class="aut"></i>
+                        <h2 class="text-autintication"></h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="../js/Firebase.js" type="module"></script>
     <script src="../js/Registro.js" type="module"></script>
