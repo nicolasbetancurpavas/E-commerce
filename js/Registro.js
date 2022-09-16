@@ -28,8 +28,6 @@ btnRegister.addEventListener("click", () => {
 
     .catch((error) => {
       const errorCode = error.code;
-      const errorMessage = error.message;
-
       //error email
       if (errorCode == "auth/invalid-email") {
         simbol.classList.add("fa-solid")
@@ -41,8 +39,8 @@ btnRegister.addEventListener("click", () => {
         simbol.classList.add("fa-solid")
         simbol.classList.add("fa-circle-xmark")
         textAutenticacion.textContent = "Error contraseña"
-      }
 
+      }
       modalAutenticacion.show()
       setTimeout(() => modalAutenticacion.hide(), 3700)
       console.log(errorCode);

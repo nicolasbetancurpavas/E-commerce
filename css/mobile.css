@@ -1546,9 +1546,10 @@ body {
 
 /*-----------modal autenticacion ---*/
 
-.modal-content {
+.modal-content-f {
     width: 75%;
     margin: auto;
+    background-color: white;
 }
 
 .fa-circle-xmark {
