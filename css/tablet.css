@@ -1,9 +1,42 @@
 :root {
-    --principal: rgb(35, 38, 129);
+    --principal: rgb(14, 89, 175);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Philosopher', sans-serif;
 }
 
 .fa-magnifying-glass {
     display: none;
+}
+
+.img-publicidad {
+    display: none;
+}
+
+
+.filter {
+    display: none;
+}
+
+
+.desktop-samples {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+
+.p-c {
+    margin: 0px;
+    color: var(--principal);
+    font-weight: bold;
 }
 
 .container-header {
@@ -14,13 +47,403 @@
 
 #iconMain {
     position: absolute;
-    left: 15px;
+    left: 35px;
     font-size: 30px;
     color: var(--principal);
 }
 
 .search-input {
-    border: 2px solid var(--principal);
-    width: 70%;
-    border-radius: 6px;
+    width: 40%;
+    border-radius: 20px;
+}
+
+.search-input:hover {
+    width: 80%;
+    transition: width 1s ease;
+    padding: 0px;
+}
+
+.send-free {
+    height: 60px;
+}
+
+.fa-truck {
+    font-size: 20px;
+    color: white;
+}
+
+.descuentos {
+    height: 55px;
+    justify-content: center;
+}
+
+.fa-tags {
+    font-size: 25px;
+}
+
+.publicidadf {
+    margin-top: 10px;
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.sample-productos {
+    margin-top: 110px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 50px;
+    align-items: center;
+}
+
+.item-sample-product {
+    justify-content: space-around;
+    margin-right: 20px;
+    margin-left: 0px;
+    height: 140px;
+    width: 180px;
+    border-radius: 50%;
+    position: relative;
+    box-shadow: 1px 1px 1px grey;
+}
+
+.title-pre-product {
+    font-size: 16px;
+    margin-right: 5px;
+    color: rgb(119, 118, 118);
+    width: 100%;
+}
+
+#hh {
+    margin-right: 5px;
+}
+
+.img-pre-product {
+    width: 280px;
+    height: 100px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.img-pre-product:hover {
+    width: 20%;
+    height: 20%;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.fafa {
+    display: none;
+}
+
+.publicidad {
+    margin-top: 20px;
+    height: 120px;
+    width: 75%;
+}
+
+.title-productnew {
+    font-size: 40px;
+}
+
+.img-productnew {
+    width: 60%;
+}
+
+.productnew-btn {
+    display: flex;
+    justify-content: space-around;
+    width: 200px;
+    font-size: 20px;
+    align-items: center;
+    padding: 20px;
+    height: 60px;
+}
+
+#comprar-new {
+    color: rgb(230, 229, 229);
+    margin-right: 0px;
+}
+
+.cupon {
+    height: 80px;
+    padding: 40px;
+}
+
+.fafa2 {
+    color: white;
+}
+
+.title-cupon {
+    font-size: 18px;
+}
+
+.registar {
+    font-size: 18px;
+}
+
+.fa-user-astronaut:hover {
+    color: white;
+    font-size: 70px;
+}
+
+.text-title-main-scroll {
+    font-size: 25px;
+}
+
+.img-product-scroll {
+    width: 150px;
+}
+
+.ff {
+    color: var(--principal);
+}
+
+.text-information {
+    font-size: 18px;
+    height: 60px;
+}
+
+.item-scroll {
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.tiket {
+    display: flex;
+    justify-content: center;
+    width: 45px;
+    height: 30px;
+}
+
+.fa-whatsapp {
+    font-size: 55px;
+}
+
+.container-wpp {
+    align-items: center;
+}
+
+.commit {
+    height: 45px;
+}
+
+.text-wpp {
+    font-size: 18px;
+}
+
+.soporte {
+    width: 55px;
+    height: 55px;
+}
+
+.support {
+    position: fixed;
+    right: 35px;
+    bottom: 155px;
+    background-color: rgb(255, 255, 255);
+    width: 400px;
+    padding: 40px;
+    text-align: center;
+    transition: background-color 1s ease;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px rgb(177, 177, 177);
+    -webkit-box-shadow: 0px 0px 11px 0px rgba(149, 144, 144, 0.83);
+    box-shadow: 0px 0px 11px 0px rgba(112, 112, 112, 0.83);
+}
+
+.main-support {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    margin-right: 0px;
+}
+
+.form-support {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-form {
+    width: 100%;
+    margin: 0px;
+    padding: 6px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+
+.input-form:hover {
+    background-color: var(--principal);
+    color: white;
+}
+
+.item-form {
+    width: 100%;
+}
+
+.title-information {
+    font-size: 24px;
+}
+
+.publicidadff {
+    margin-bottom: 20px;
+}
+
+.img-pago {
+    width: 15%;
+    height: 10%;
+    margin-right: 20px;
+}
+
+.item-container {
+    margin-top: 20px;
+    width: 35%;
+}
+
+.title-pago {
+    font-size: 22px;
+}
+
+.title-quienes {
+    font-size: 22px;
+}
+
+.item-seguir {
+    font-size: 40px;
+}
+
+.container-item-rs {
+    width: 100%;
+}
+
+.modal-content {
+    padding: 10px;
+    width: 100%;
+    margin: 0px;
+}
+
+/* ofcanvas */
+
+#offcanvasExample {
+    width: 60%;
+}
+
+/*registro*/
+
+.registrar-container {
+    padding: 50px;
+}
+
+.text-is {
+    font-size: 19px;
+}
+
+#offcanvasRightLabel {
+    font-size: 25px;
+    color: var(--principal);
+}
+
+.btn-register {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+
+.modal-content-f {
+    border-radius: 10px;
+}
+
+
+#brr {
+    max-width: 100%;
+    padding: 50px;
+}
+
+.modal-body-aut {
+    padding: 30px;
+}
+
+/*cards*/
+
+.container-card {
+    height: 40%;
+    width: 35%;
+    box-shadow: 2px 2px 2px rgb(210, 210, 210);
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.card-img {
+    width: 60%;
+    margin: auto;
+}
+
+.card-nombre {
+    height: 50px;
+}
+
+.card-btn {
+    height: 45px;
+    box-shadow: none;
+}
+
+.modal-body-informacion {
+    margin-top: 0px;
+}
+
+.contenedor-img-informacion-producto {
+    margin-top: 80px;
+}
+
+#atras {
+    font-size: 27px;
+}
+
+.btn-favorite {
+    font-size: 25px;
+}
+
+.btn-favorite:hover {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#cantidadProducto {
+    width: 100px;
+}
+
+.item-modal-footeR {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#add {
+    display: flex;
+    justify-content: center;
+    width: 100px;
+    box-shadow: 1px 2px rgb(211, 211, 211);
+}
+
+.img-informacion-producto {
+    width: 200px;
+    height: 200px;
+}
+
+
+#offcanvasRight {
+    margin-top: 70%;
+}
+
+.fin-pie {
+    bottom: 50px;
 }

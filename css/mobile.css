@@ -1,5 +1,5 @@
 :root {
-    --principal: rgb(35, 38, 129);
+    --principal: rgb(14, 89, 175);
 }
 
 * {
@@ -15,6 +15,27 @@ body {
 
 /*---------------------------------------header--------------------------------------*/
 
+.filter {
+    display: none;
+}
+
+.img-publicidad {
+    display: none;
+}
+
+.desktop-samples {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.container-header-desktop {
+    display: none;
+}
+
+.img-logo {
+    width: 100px;
+}
 
 .container-header {
     width: 100%;
@@ -30,25 +51,33 @@ body {
 .prom {
     display: flex;
     justify-content: center;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     margin-top: 20px;
 }
 
 .publicidad {
+    margin-top: 20px;
     width: 100%;
     height: 120px;
+    margin-bottom: 50px;
 }
 
 .publicidadf {
-    width: 70%;
-    height: 240px;
-    border-radius: 10px;
+    margin-top: 20px;
+    width: 100%;
+    height: 110px;
+    margin-bottom: 10px;
 }
 
 .publicidadff {
     width: 70%;
     height: 100px;
     border-radius: 3px;
+}
+
+.img-item-public {
+    width: 250px;
+    border-radius: 5px;
 }
 
 #iconMain {
@@ -81,9 +110,6 @@ body {
     background-color: transparent;
 }
 
-.search-input:focus {
-    height: 60px;
-}
 
 
 #searchicon {
@@ -104,8 +130,8 @@ body {
     margin-top: 10px;
     margin-bottom: 0px;
     color: transparent;
-    color: var(--principal);
-    text-shadow: 0 1px 0 #CCCCCC, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, .1), 0 0 5px rgba(0, 0, 0, .1), 0 1px 3px rgba(0, 0, 0, .3), 0 3px 5px rgba(0, 0, 0, .2), 0 5px 10px rgba(0, 0, 0, .25), 0 10px 10px rgba(0, 0, 0, .2), 0 20px 20px rgba(0, 0, 0, .15);
+    color: #dfdddd;
+    text-shadow: 0 3px 0 var(--principal), 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, .1), 0 0 5px rgba(0, 0, 0, .1), 0 1px 3px rgba(0, 0, 0, .3), 0 3px 5px rgba(0, 0, 0, .2), 0 5px 10px rgba(0, 0, 0, .25), 0 10px 10px rgba(0, 0, 0, .2), 0 20px 20px rgba(0, 0, 0, .15);
 }
 
 
@@ -119,13 +145,13 @@ body {
     background: transparent;
     text-align: center;
     border-radius: 0px;
+    margin-bottom: 10px;
 }
 
 .send-free {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 130px;
     background-color: var(--principal);
     color: rgb(237, 234, 234);
     text-shadow: 2px 1px 1px black;
@@ -161,8 +187,12 @@ body {
     display: flex;
     width: 100%;
     flex-direction: column;
-    margin-top: 20px;
-    margin-bottom: 30px;
+    margin-top: 120px;
+    margin-bottom: 15px;
+}
+
+#hh {
+    margin-right: 10px;
 }
 
 .item-sample-product {
@@ -173,6 +203,7 @@ body {
     margin-bottom: 27px;
     border-radius: 20px;
     border-bottom: 0.2px solid rgb(236, 236, 236);
+    width: 300px;
 }
 
 .item-sample-product:hover {
@@ -181,14 +212,12 @@ body {
 }
 
 .img-pre-product {
-    width: 22%;
-    height: 22%;
+    width: 80px;
+    height: 80px;
     margin-right: 0px;
+    margin: 20px;
 }
 
-.img-pre-product:hover {
-    width: 30%;
-}
 
 .title-pre-product {
     width: 60%;
@@ -754,12 +783,12 @@ body {
 /*footer*/
 
 .container-footer {
-    margin-bottom: 40px;
+    margin-bottom: 50px;
     display: flex;
     flex-direction: column;
     background-color: rgb(20, 20, 20);
     color: rgb(202, 202, 202);
-    padding: 20px;
+    padding: 25px;
 }
 
 .title-pago {
@@ -1380,6 +1409,7 @@ body {
 
 .modal-content {
     padding: 10px;
+    width: 100%;
 }
 
 .figure {
@@ -1522,7 +1552,7 @@ body {
     width: 70%;
     margin: auto;
     color: white;
-    background-color: rgb(0, 0, 141);
+    background-color: var(--principal);
     border: 2px transparent solid;
     border-radius: 10px;
     margin-top: 20px;
@@ -1571,4 +1601,18 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+}
+
+
+#brr {
+    max-width: 100%;
+    padding: 50px;
+}
+
+.modal-body-aut {
+    padding: 20px;
+}
+
+.modal-content-f {
+    border-radius: 10px;
 }

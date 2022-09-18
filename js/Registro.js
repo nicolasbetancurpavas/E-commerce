@@ -42,8 +42,7 @@ btnRegister.addEventListener("click", () => {
 
       }
       modalAutenticacion.show()
-      setTimeout(() => modalAutenticacion.hide(), 3700)
-      console.log(errorCode);
+
       // ..
     });
 });

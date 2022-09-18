@@ -12,7 +12,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
     <script src="https://kit.fontawesome.com/cd03ee7cfb.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../css/mobile.css">
-    <link rel="stylesheet" href="../css/tablet.css" media="screen and (min-width:520px)">
+    <link rel="stylesheet" href="../css/tablet.css" media="screen and (min-width:550px)">
+    <link rel="stylesheet" href="../css/desktop.css" media="screen and (min-width:910px)">
 </head>
 
 <body id="body">
@@ -20,6 +21,21 @@
 
     <main>
         <div class="container-main-productos">
+            <div class="filter">
+                <h2>FILTROS</h2>
+                <div>
+                    <p>Envio gratis</p>
+                </div>
+                <div>
+                    <p>Color</p>
+                </div>
+                <div>
+                    <p>Precio</p>
+                </div>
+                <div>
+                    <p>Año</p>
+                </div>
+            </div>
             <div class="main-productos">
 
             </div>
@@ -160,17 +176,74 @@
 
         <div class="container-header">
             <div class="title-main-container">
-                <h2 class="title-ecommerce">SLT</h2>
+                <img class="img-logo" src="/img/logo.png" alt="">
             </div>
 
             <nav class="main__nav">
                 <i class="fa-solid fa-bars-staggered" id="iconMain" data-bs-toggle="offcanvas"
                     href="#offcanvasExample"></i>
+
             </nav>
 
             <input class="search-input" type="text" placeholder="Buscar">
 
             <i id="searchicon" class="fa-solid fa-magnifying-glass"></i>
+        </div>
+
+        <div class="container-header-desktop">
+
+            <div class="logo">
+                <img class="img-logo" src="../img/logo.png" alt="">
+            </div>
+
+            <nav class="navegation">
+                <ul class="container-nav">
+                    <a href="index.html" class="item-nav">
+                        <i class="fa-solid fa-house"></i>
+                        <li>Inicio</li>
+                    </a>
+                    <a href="" class="item-nav">
+                        <li>Quienes somos?</li>
+                    </a>
+                    <a href="" class="item-nav">
+                        <li>trabaja con nostros</li>
+                    </a>
+                </ul>
+
+                <div class="categories">
+                    <div class="ctg" class="item-nav">
+                        <p class="p-c">Categorias
+                            <i id="noview" class="fa-solid fa-chevron-right"></i>
+                        </p>
+                    </div>
+                    <ul class="nover invisible">
+                        <a href="./preparacion-alim.html" class="item-noview">
+                            <li>Preparacion de alimentos</li>
+                        </a>
+                        <a href="" class="item-noview">
+                            <li>Climatizacion</li>
+                        </a>
+                        <a href="" class="item-noview">
+                            <li>Limpieza</li>
+                        </a>
+                        <a href="" class="item-noview">
+                            <li>Electrodomésticos</li>
+                        </a>
+                        <a href="" class="item-noview">
+                            <li>Computadores</li>
+                        </a>
+                        <a href="" class="item-noview" id="tv">
+                            <li>Televisores</li>
+                        </a>
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="shop-cart">
+                <i class="fa-solid fa-user" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"></i>
+                <i class="fa-solid fa-basket-shopping"></i>
+            </div>
+
         </div>
 
         <ul class="container-main-user">
@@ -186,7 +259,6 @@
             </li>
             <li class="item shop">
                 <div class="cont-shop">
-                    <p class="contador invisible">1</p>
                     <i class="fa-solid fa-cart-shopping"></i>
                 </div>
                 <p class="user-init">tus compras</p>
@@ -210,7 +282,7 @@
             <div class="container-quienes-somos">
                 <div class="no-view">
                     <h2 class="title-quienes">Quienes somos</h2>
-                    <i id="noview" class=" fa-solid fa-chevron-right"></i>
+                    <i id="novieww" class=" fa-solid fa-chevron-right"></i>
                     <div class="information-quiene-somos">
                     </div>
                 </div>
@@ -386,6 +458,7 @@
     </div>
 
     <script src="../js/eventos.js"></script>
+    <script src="../js/enventoIndex.js"></script>
     <script src="../js/traversing.js" type="module"></script>
     <script src="../js/controller.js" type="module"></script>
 

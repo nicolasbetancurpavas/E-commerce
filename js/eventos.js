@@ -11,7 +11,7 @@ icono.addEventListener("click", () => {
 
 // evento para mostra quienes somos
 
-const iconoflecha = document.getElementById("noview")
+const iconoflecha = document.getElementById("novieww")
 const texto = document.querySelector(".yes-view")
 const title = document.querySelector(".title-quienes")
 const iconoflechaSample = document.querySelector(".title-quienes")
@@ -21,8 +21,7 @@ title.addEventListener("click", () => {
     iconoflecha.classList.toggle("rotaremos")
 })
 
-let arrowGet = document.getElementById("noview")
-arrowGet.addEventListener("click", () => {
+iconoflecha.addEventListener("click", () => {
     texto.classList.toggle("activar")
     iconoflecha.classList.toggle("rotaremos")
 })
@@ -37,6 +36,7 @@ const iconoSupport = document.querySelector("#support")
 iconoSupport.addEventListener("click", () => {
     vistaSopport.classList.toggle("activar")
 })
+
 // cerrar vista desde el icono cerrar
 cerrar.addEventListener("click", () => {
     vistaSopport.classList.toggle("activar")
