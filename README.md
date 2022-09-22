@@ -1,7 +1,7 @@
 # E-commerce basico
 
 - este proyecto tiene como objectivo, mostrar mis conocimientos con los lenguajes
-**HTML**,**CSS**,**JAVASCRIPT Vainilla**
+**HTML**,**CSS Responsive desing**,**JAVASCRIPT Vainilla**
 - Index con presentacion de la Tienda 
 - Apartado de productos con informacion relavante de cada producto
 - ampliar info de cada producto para escojer cantidad y agregar al carrito (Modal Bootstrap)

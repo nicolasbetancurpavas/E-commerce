@@ -31,7 +31,8 @@ contenedorProductos.addEventListener("click", (e) => {
 
 const btnAdd = document.getElementById("add");
 const capsula = document.querySelector("#contador");
-const capsulaMobile = document.querySelector(".contador");
+const capsulaMobile = document.querySelector(".contadorr");
+console.log(capsula)
 let carrito = [];
 
 btnAdd.addEventListener("click", () => {
