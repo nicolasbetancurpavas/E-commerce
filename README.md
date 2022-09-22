@@ -1,10 +1,10 @@
-#E-commerce basico
+# E-commerce basico
 
-Tienda basica con autenticacion de registro con firebase
-aplicaremos el manejo del dom y la tecnica denominada traversing, para crear elementos dinamicamente con javascript
-jugaremos con estilos css, aplicaremos buenas practicas y metodologia mobil firts
-usaremos boostrap para ayudarnos con el diseno
-un controlador para manipular los modales y eventos , logica agregar al carrito event.target para tener informacion del evento 
-```diff - text in red + text in green ! text in orange # text in gray @@ text in purple (and bold)@@ ```
+- este proyecto tiene como objectivo, mostrar mis conocimientos con los lenguajes
+**HTML**,**CSS**,**JAVASCRIPT Vainilla**
+- Index con presentacion de la Tienda 
+- Apartado de productos con informacion relavante de cada producto
+- ampliar info de cada producto para escojer cantidad y agregar al carrito (Modal Bootstrap)
+- resumen de las compras, productos agregados al carrito (Modal Bootstrap)
+- Autenticacion de Registro con **Firebase**
 
-Fuente: https://www.iteramos.com/pregunta/30538/como-anadir-color-al-archivo-readmemd-de-github
