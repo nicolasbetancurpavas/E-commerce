@@ -30,7 +30,8 @@ contenedorProductos.addEventListener("click", (e) => {
 // rutina para agregar al carrito
 
 const btnAdd = document.getElementById("add");
-const capsula = document.querySelector(".contador");
+const capsula = document.querySelector("#contador");
+const capsulaMobile = document.querySelector(".contador");
 let carrito = [];
 
 btnAdd.addEventListener("click", () => {
@@ -44,7 +45,9 @@ btnAdd.addEventListener("click", () => {
   console.log(suma)
 
   capsula.textContent = suma
+  capsulaMobile.textContent = suma
   capsula.classList.remove("invisible")
+  capsulaMobile.classList.remove("invisible")
   modalInformacion.hide();
 
 });
@@ -160,6 +163,7 @@ iconShop.addEventListener("click", () => {
       //limpiar carrito
       carrito = [];
       capsula.classList.add("invisible");
+      capsulaMobile.classList.add("invisible");
       modalResumen.hide();
     });
 
