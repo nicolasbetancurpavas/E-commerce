@@ -58,9 +58,11 @@ export function llenarTienda() {
         estado.classList.add("estado")
         estado.textContent = producto.estado
 
+
         const btn = document.createElement("button")
         btn.classList.add("card-btn")
         btn.textContent = "ver Mas"
+        btn.setAttribute("id", "btn")
 
         if (producto.descuento == 0) {
             priceBefore.style.display = "none"

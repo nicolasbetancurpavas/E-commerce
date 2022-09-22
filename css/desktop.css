@@ -9,6 +9,10 @@
     font-family: 'Philosopher', sans-serif;
 }
 
+p {
+    margin: 0px;
+}
+
 .container-header {
     display: none;
 }
@@ -306,6 +310,7 @@
 
 .container-main-scroll {
     overflow: hidden;
+    margin: 0px 8%;
 }
 
 .main-scroll-h {
@@ -316,7 +321,7 @@
 }
 
 .item-scroll {
-    width: 30%;
+    width: 25%;
     box-shadow: 1px 1px 2px 1px rgb(222, 220, 220);
 }
 
@@ -328,7 +333,7 @@
 
 
 .publicidadf {
-    width: 40%;
+    width: 35%;
     height: 110px;
 }
 
@@ -347,7 +352,7 @@
 
 
 .information-container {
-    padding: 20px 200px;
+    padding: 0px 15%;
 }
 
 .title-information {
@@ -377,6 +382,7 @@
 }
 
 .text-quienes-somos {
+    height: auto;
     font-size: 18px;
 }
 
@@ -414,12 +420,18 @@
     color: rgb(43, 60, 212);
     transition: color 1s ease;
     font-size: 48px;
+    cursor: pointer;
 }
 
 .fa-square-instagram:hover {
-    color: rgb(212, 80, 43);
-    transition: color 1s ease;
+    background: rgb(127, 16, 163);
+    background: linear-gradient(90deg, rgba(127, 16, 163, 1) 0%, rgba(231, 62, 139, 1) 42%, rgba(240, 69, 121, 1) 64%, rgba(241, 130, 44, 1) 100%);
+    transition: background 1s ease;
     font-size: 48px;
+    border-radius: 5px;
+    height: 48px;
+    cursor: pointer;
+
 }
 
 
@@ -427,6 +439,11 @@
     color: rgb(222, 47, 12);
     transition: color 1s ease;
     font-size: 48px;
+    cursor: pointer;
+}
+
+#novieww:hover {
+    cursor: pointer;
 }
 
 /*INICIAR SESION*/
@@ -444,20 +461,22 @@
 /*Productos*/
 
 .container-card {
-    width: 300px;
-    height: 480px;
+    width: 270px;
+    height: 420px;
     margin-right: 15px;
 }
 
 .card-img {
-    width: 180px;
-    height: 180px;
+    width: 150px;
+    height: 160px;
+    margin: 10px auto;
 }
 
 .main-productos {
-    width: 80%;
+    width: 72%;
     justify-content: flex-start;
-    margin-left: 220px;
+    margin-left: 23%;
+    position: relative;
 }
 
 .container-main-productos {
@@ -465,10 +484,146 @@
     position: relative;
 }
 
+
+
 .filter {
     display: flex;
     flex-direction: column;
     width: 20%;
-    margin-left: 20px;
+    margin-left: 25px;
     position: fixed;
+}
+
+
+.item-filter {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.title-filter {
+    margin-bottom: 25px;
+}
+
+.text-filter {
+    margin: 0px;
+    margin-right: 15px;
+}
+
+.divisores {
+    display: flex;
+}
+
+.divisores:hover {
+    background-color: #adabab;
+    padding: 5px;
+    width: 50%;
+    color: white;
+    border-radius: 5px;
+}
+
+.text-check {
+    margin-right: 10px;
+}
+
+
+.cc {
+    width: 60px;
+}
+
+.ccc {
+    width: 140px;
+    margin-bottom: 5px;
+}
+
+.escodido {
+    width: 500px;
+    margin-bottom: 15px;
+    color: #7a7a7a;
+}
+
+#btn:hover {
+    position: absolute;
+    bottom: 10px;
+}
+
+.card-btn {
+    position: absolute;
+    bottom: 10px;
+    width: 90%;
+}
+
+/*registro*/
+.registrar-container {
+    padding: 85px;
+    padding-bottom: 0px;
+}
+
+
+.formulario-registro {
+    padding: 5% 15%;
+    width: 550px;
+    margin: 100px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-box-shadow: -1px 1px 11px 0px rgba(138, 138, 138, 0.7);
+    box-shadow: -1px 1px 11px 0px rgba(138, 138, 138, 0.7);
+    border-radius: 5px;
+}
+
+.btn-register {
+    width: 300px;
+    margin: 20px 0px;
+}
+
+.item-input {
+    text-align: center;
+}
+
+.modal-body-aut {
+    width: 35%;
+    margin: auto;
+}
+
+/* modalinfo*/
+
+.modal-tin {
+    height: 70%;
+    margin-top: 5%;
+}
+
+.modal-body-informacion {
+    overflow: hidden;
+    padding: 200px;
+}
+
+.modal-footer {
+    justify-content: center;
+}
+
+.container-informacion-producto-modal {
+    padding: 5px;
+}
+
+.precio-producto-modal {
+    margin: 0px 50px;
+    color: var(--principal);
+}
+
+#add {
+    cursor: pointer;
+}
+
+.contador {
+    bottom: 15px;
+    right: 0px;
+}
+
+.resumen-compra {
+    width: 550px;
+}
+
+.contenedor-img-informacion-producto {
+    margin-top: 0px;
 }

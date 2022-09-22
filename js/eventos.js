@@ -43,8 +43,35 @@ cerrar.addEventListener("click", () => {
 })
 
 
+//ocultar filtros
+
+const footer = document.querySelector(".footer")
+const filtros = document.querySelector(".filter")
+const main = document.querySelector(".container-main-productos")
+
+footer.addEventListener("mousemove", () => {
+    filtros.classList.add("invisible")
+})
+
+main.addEventListener("mousemove", () => {
+    filtros.classList.remove("invisible")
+})
 
 
+// filtros 
 
+const gratis = document.getElementById("gratis")
+const color = document.getElementById("color")
+const precio = document.getElementById("precio")
+const ano = document.getElementById("ano")
+const vista = document.querySelector(".escodido")
+const gratisE = document.getElementById("gratisN")
+const colorE = document.getElementById("colorN")
+const precioE = document.getElementById("precioN")
+const anoE = document.getElementById("anoN")
 
+gratis.addEventListener("click", () => gratisE.classList.toggle("desactivar"))
+color.addEventListener("click", () => colorE.classList.toggle("desactivar"))
+precio.addEventListener("click", () => precioE.classList.toggle("desactivar"))
+ano.addEventListener("click", () => anoE.classList.toggle("desactivar"))
 

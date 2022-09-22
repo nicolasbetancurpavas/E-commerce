@@ -104,7 +104,7 @@
     margin-left: 0px;
     height: 140px;
     width: 180px;
-    border-radius: 50%;
+    border-radius: 10px;
     position: relative;
     box-shadow: 1px 1px 1px grey;
 }
@@ -372,12 +372,21 @@
 
 /*cards*/
 
+.main-productos {
+    justify-content: space-evenly;
+}
+
 .container-card {
-    height: 40%;
     width: 35%;
     box-shadow: 2px 2px 2px rgb(210, 210, 210);
     padding: 15px;
     border-radius: 5px;
+}
+
+.container-card:hover {
+    box-shadow: 2px 2px 2px 2px rgb(91, 128, 172);
+    padding: 20px;
+    transition: box-shadow 1s ease;
 }
 
 .card-img {
@@ -386,7 +395,7 @@
 }
 
 .card-nombre {
-    height: 50px;
+    height: 70px;
 }
 
 .card-btn {
@@ -446,4 +455,13 @@
 
 .fin-pie {
     bottom: 50px;
+}
+
+
+.registrar-container {
+    margin-top: auto;
+}
+
+.shop {
+    margin: 0px;
 }

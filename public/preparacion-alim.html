@@ -22,23 +22,77 @@
     <main>
         <div class="container-main-productos">
             <div class="filter">
-                <h2>FILTROS</h2>
-                <div>
-                    <p>Envio gratis</p>
+
+                <h2 class="title-filter">FILTROS</h2>
+
+                <div class="item-filter" id="gratis">
+                    <p class="text-filter">Envio gratis</p> <i class="fa-solid fa-chevron-right rota" id="flecha"></i>
                 </div>
-                <div>
-                    <p>Color</p>
+
+                <div class="escodido desactivar" id="gratisN">
+                    <div class="divisores">
+                        <p class="text-check">Si</p> <input type="checkbox">
+                    </div>
+
+                    <div class="divisores">
+                        <p class="text-check">No</p> <input type="checkbox">
+                    </div>
                 </div>
-                <div>
-                    <p>Precio</p>
+
+                <div class="item-filter" id="color">
+                    <p class="text-filter"> Color</p> <i class="fa-solid fa-chevron-right rota"></i>
                 </div>
-                <div>
-                    <p>Año</p>
+
+                <div class="escodido" id="colorN">
+                    <div class="divisores">
+                        <p class="text-check cc">plata</p> <input type="checkbox" id="plat">
+                    </div>
+                    <div class="divisores">
+                        <p class="text-check cc">blanco</p> <input type="checkbox" id="blanc">
+                    </div>
+                    <div class="divisores">
+                        <p class="text-check cc">Negro</p> <input type="checkbox" id="negro">
+                    </div>
                 </div>
+
+                <div class="item-filter" id="precio">
+                    <p class="text-filter">Precio</p> <i class="fa-solid fa-chevron-right rota"></i>
+                </div>
+
+
+                <div class="escodido " id="precioN">
+                    <div class="divisores">
+                        <p class="text-check ccc">250.000 a 450.000</p> <input type="checkbox">
+                    </div>
+                    <div class="divisores">
+                        <p class="text-check ccc">450.000 a 750.000</p> <input type="checkbox">
+                    </div>
+                    <div class="divisores">
+                        <p class="text-check ccc">750.000 en adelante</p> <input type="checkbox">
+                    </div>
+                </div>
+
+                <div class="item-filter" id="ano">
+                    <p class="text-filter">Año</p> <i class="fa-solid fa-chevron-right rota"></i>
+                </div>
+
+
+                <div class="escodido " id="anoN">
+                    <div class="divisores">
+                        <p class="text-check ccc">2010 a 2018</p> <input type="checkbox">
+                    </div>
+                    <div class="divisores">
+                        <p class="text-check ccc">2018 en adelante</p> <input type="checkbox">
+                    </div>
+                </div>
+
+
+
             </div>
             <div class="main-productos">
 
             </div>
+
             <div class="soporte">
                 <i id="support" class="fa-solid fa-headset"></i>
                 <section class="support desactivar">
@@ -71,7 +125,7 @@
     <div class="MODALINFORMACION">
         <!-- Modal -->
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-fullscreen">
+            <div class="modal-dialog modal-fullscreen modal-tin">
                 <div class="modal-content">
                     <div class="modal-header">
                         <button id="atras" class="btn-atras" data-bs-dismiss="modal"><i
@@ -120,7 +174,7 @@
         <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
             aria-labelledby="staticBackdropLabel" aria-hidden="true">
             <div class="modal-dialog">
-                <div class="modal-content">
+                <div class="modal-content resumen-compra">
                     <div class="modal-header">
                         <h5 class="modal-title" id="staticBackdropLabel">Carrito de Compras</h5>
                         <button type="button" class="btn-close" id="btn-close" data-bs-dismiss="modal"
@@ -213,7 +267,7 @@
                 <div class="categories">
                     <div class="ctg" class="item-nav">
                         <p class="p-c">Categorias
-                            <i id="noview" class="fa-solid fa-chevron-right"></i>
+                            <i id="ROTA" class="fa-solid fa-chevron-right"></i>
                         </p>
                     </div>
                     <ul class="nover invisible">
@@ -241,7 +295,8 @@
 
             <div class="shop-cart">
                 <i class="fa-solid fa-user" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"></i>
-                <i class="fa-solid fa-basket-shopping"></i>
+                <i id="shop" class="fa-solid fa-basket-shopping shop"></i>
+                <p class="contador invisible">1</p>
             </div>
 
         </div>
@@ -257,8 +312,10 @@
                 </a>
                 <p class="user-init">Inicio</p>
             </li>
-            <li class="item shop">
+
+            <li id="shoping" class="item shop">
                 <div class="cont-shop">
+                    <p class="contador invisible">1</p>
                     <i class="fa-solid fa-cart-shopping"></i>
                 </div>
                 <p class="user-init">tus compras</p>

@@ -203,7 +203,7 @@ body {
     margin-bottom: 27px;
     border-radius: 20px;
     border-bottom: 0.2px solid rgb(236, 236, 236);
-    width: 300px;
+    width: 100%;
 }
 
 .item-sample-product:hover {
@@ -1615,4 +1615,8 @@ body {
 
 .modal-content-f {
     border-radius: 10px;
+}
+
+.registrar-container {
+    margin-top: 35%;
 }
