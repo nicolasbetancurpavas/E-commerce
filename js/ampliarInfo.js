@@ -9,6 +9,7 @@ export function ampliarInformacionProducto(e) {
     productos.precioAhora = e.target.parentElement.querySelector(".precio-nuevo").textContent
     console.log(e.target.parentElement)
 
+
     // relleno modal (pinto informacion)
     const imagen = document.querySelector(".img-informacion-producto")
     imagen.src = e.target.parentElement.querySelector(".card-img").src
