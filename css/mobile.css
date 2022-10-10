@@ -1,5 +1,5 @@
 :root {
-    --principal: rgb(14, 89, 175);
+    --principal: rgb(222, 21, 75);
 }
 
 * {
@@ -145,7 +145,7 @@ body {
     background: transparent;
     text-align: center;
     border-radius: 0px;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
 }
 
 .send-free {
@@ -524,7 +524,7 @@ body {
     background-color: var(--principal);
     height: 25px;
     color: white;
-    border: 2px solid black;
+    border: 2px solid rgb(154, 152, 152);
     border-radius: 5px;
 }
 
@@ -830,7 +830,7 @@ body {
 
 .rotaremos {
     transform: rotate(0.75turn);
-    transition: visibility 0s, opacity 0.5s linear;
+    transition: transform 1s ease;
 }
 
 .yes-view {
@@ -947,7 +947,7 @@ body {
 .precio-nuevo {
     font-size: 24px;
     font-weight: bold;
-    color: var(--principal);
+    color: #7b7a7a;
 }
 
 .precio-nuevo::before {
@@ -961,7 +961,7 @@ body {
     position: absolute;
     right: 15px;
     top: 50px;
-    background-color: rgb(213, 84, 84);
+    background-color: var(--principal);
     border-radius: 5px;
     width: 50px;
     height: 28px;
@@ -978,8 +978,8 @@ body {
     border: 2px solid transparent;
     border-radius: 5px;
     height: 40px;
-    background-color: var(--principal);
-    color: white;
+    background-color: transparent;
+    color: rgb(128, 126, 126);
     box-shadow: 2px;
     box-shadow: 2px 2px 2px rgb(188, 186, 186);
 }
@@ -987,9 +987,9 @@ body {
 .card-btn:hover {
     position: relative;
     bottom: 5px;
-    background-color: white;
+    background-color: rgb(39, 39, 39);
     font-weight: bold;
-    color: var(--principal);
+    color: rgb(188, 186, 186);
     box-shadow: 3px 2px 3px rgb(188, 186, 186);
     transition: background-color 1s ease;
     height: 43px;
