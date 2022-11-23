@@ -8,3 +8,5 @@
 - resumen de las compras, productos agregados al carrito (Modal Bootstrap)
 - Autenticacion de Registro con **Firebase**
 
+https://nicolasbetancurpavas.github.io/E-commerce/public/index.html
+
