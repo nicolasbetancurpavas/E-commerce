@@ -11,3 +11,5 @@ categories.addEventListener("click", () => {
     flecha.classList.toggle("rota")
     getCateogories.classList.toggle("invisible")
 })
+
+console.log(categories.addEventListener)

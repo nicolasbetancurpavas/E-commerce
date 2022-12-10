@@ -1,5 +1,5 @@
 :root {
-    --principal: rgb(222, 21, 75);
+    --principal: rgb(60, 179, 197);
 }
 
 * {
@@ -40,7 +40,7 @@
 }
 
 .container-header {
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(29, 28, 28);
     display: flex;
     justify-content: center;
 }
@@ -50,6 +50,11 @@
     left: 35px;
     font-size: 30px;
     color: var(--principal);
+    text-shadow: 2px 1px 2px rgb(0, 0, 0);
+}
+
+.user-init {
+    margin: 0px;
 }
 
 .search-input {
@@ -448,7 +453,6 @@
     height: 200px;
 }
 
-
 #offcanvasRight {
     margin-top: 70%;
 }
@@ -457,11 +461,10 @@
     bottom: 50px;
 }
 
-
 .registrar-container {
     margin-top: auto;
 }
 
-.shop {
-    margin: 0px;
+.cont-shop {
+    position: none;
 }
