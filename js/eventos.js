@@ -49,6 +49,7 @@ const footer = document.querySelector(".footer")
 const filtros = document.querySelector(".filter")
 const main = document.querySelector(".container-main-productos")
 
+
 footer.addEventListener("mousemove", () => {
     filtros.classList.add("invisible")
 })
