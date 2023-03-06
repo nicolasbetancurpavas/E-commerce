@@ -1,6 +1,7 @@
 # E-commerce básico
 
 Este proyecto es un E-commerce básico que tiene como objetivo mostrar mis conocimientos en los lenguajes HTML, CSS Responsive Design, JavaScript Vanilla y el uso de Firebase para la autenticación de registro.
+![Texto alternativo de la imagen](https://firebasestorage.googleapis.com/v0/b/imagenes-1ccc1.appspot.com/o/ecommecer%2FECOOMERCE.png?alt=media&token=d6a5dc5c-1d13-455d-9187-fc9d167d8779)
 
 ## Características
 
