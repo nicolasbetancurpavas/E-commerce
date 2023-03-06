@@ -1,13 +1,35 @@
-# E-commerce basico
+# E-commerce básico
 
-- este proyecto tiene como objectivo, mostrar mis conocimientos con los lenguajes
-**HTML**,**CSS Responsive desing**,**JAVASCRIPT Vainilla**
-- Index con presentacion de la Tienda 
-- Apartado de productos con informacion relavante de cada producto
-- ampliar info de cada producto para escojer cantidad y agregar al carrito (Modal Bootstrap)
-- resumen de las compras, productos agregados al carrito (Modal Bootstrap)
-- Autenticacion de Registro con **Firebase**
+Este proyecto es un E-commerce básico que tiene como objetivo mostrar mis conocimientos en los lenguajes HTML, CSS Responsive Design, JavaScript Vanilla y el uso de Firebase para la autenticación de registro.
 
-### [Ver Tienda](https://nicolasbetancurpavas.github.io/E-commerce/public/index.html)
+## Características
+
+El proyecto consta de las siguientes características:
+
+- Index con presentación de la tienda.
+- Apartado de productos con información relevante de cada producto.
+- Ampliar información de cada producto para elegir cantidad y agregar al carrito (Modal Bootstrap).
+- Resumen de las compras, productos agregados al carrito (Modal Bootstrap).
+- Autenticación de registro con Firebase.
+
+## Demo
+
+Puedes ver una demo de la tienda [aquí](https://ejemplo.com/demo).
+
+## Cómo utilizar
+
+Para utilizar este proyecto, simplemente clona este repositorio y ábrelo en tu navegador. Si deseas hacer cambios en el proyecto, puedes hacer un fork y luego clonarlo en tu computadora para hacer las modificaciones.
+
+## Mejoras y ampliaciones
+
+Este proyecto se puede mejorar y ampliar de muchas maneras. Algunas ideas son:
+
+- Añadir la funcionalidad de agregar productos al carrito y finalizar la compra.
+- Añadir diferentes opciones de pago.
+- Añadir la funcionalidad de búsqueda de productos.
+- Añadir la funcionalidad de ver el historial de compras del usuario.
+
+Si tienes alguna otra idea para mejorar o ampliar el proyecto, ¡no dudes en hacer un pull request! Estoy abierto a cualquier sugerencia.
+
 
 
