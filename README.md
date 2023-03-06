@@ -15,7 +15,7 @@ El proyecto consta de las siguientes características:
 
 ## Demo
 
-Puedes ver una demo de la tienda [aquí](https://ejemplo.com/demo).
+Puedes ver una demo de la tienda [aquí](https://nicolasbetancurpavas.github.io/E-commerce/public/index.html).
 
 ## Cómo utilizar
 
